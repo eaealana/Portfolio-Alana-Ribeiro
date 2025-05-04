@@ -98,6 +98,8 @@ export const InfoSection = styled.div`
     width: 100%;
 
     font: 200 0.9rem 'Inter', sans-serif;
+
+    margin-top: 1.5rem;
 `
 
 export const Location = styled.p`
@@ -217,14 +219,14 @@ export const ProjectsLibrary = styled.div`
 `
 
 export const VideosDesktop = styled.video`
-    width: 250px;
+    width: 70%;
     height: 150px;
     border-radius: 1rem;
     object-fit: cover;
 `
 
 export const PictureDesktop = styled.img`
-    width: 250px;
+    width: 70%;
 
     border-radius: 1rem;
 `
@@ -233,6 +235,10 @@ export const PictureMobile = styled.img`
     height: 150px;
     border-radius: 1rem;
     object-fit: cover;
+
+    @media (min-width: 769px) {
+        height: 200px;
+    }
 `
 
 export const VideosMobile = styled.video`
@@ -356,4 +362,91 @@ export const TagJS = styled.button`
 
     font: 600 0.8rem 'Poppins', sans-serif;
     letter-spacing: 1px;
+`
+
+//! SKILLS
+export const ContentSkills = styled.div`
+    width: 100%;
+`
+
+export const CardSkills = styled.div`
+    width: auto;
+    height: auto;
+
+    background: ${({ bgColor }) =>
+        bgColor || 'linear-gradient(135deg, #1d1d1d 0%, #222 100%)'};
+    padding: 1rem;
+
+    display: flex;
+    margin: 1rem 0;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+`
+
+export const VectorSkills = styled.img`
+    height: 90px;
+`
+
+export const TextCardSkills = styled.div`
+    text-align: start;
+    width: 90%;
+
+    margin-left: 1rem;
+`
+
+export const TitleCardSkills = styled.h2`
+    font-size: 0.8rem;
+
+    @media (min-width: 769px) {
+        font-size: 1rem;
+    }
+`
+
+export const TextCard = styled.p`
+    font: 200 0.6rem 'Inter', sans-serif;
+    letter-spacing: 1px;
+
+    @media (min-width: 769px) {
+        font-size: 0.8rem;
+    }
+`
+
+//! CONTACT
+export const BoardView = styled.div`
+    width: 100%;
+
+    margin: 1rem 0;
+`
+
+export const CardLineOne = styled.div`
+    width: 100%;
+
+    display: flex;
+    gap: 0 1rem;
+
+    margin-bottom: 1.2rem;
+`
+
+export const CardContact = styled.div`
+    width: 48%;
+    background: ${({ cardColor }) =>
+        cardColor || 'linear-gradient(135deg, #333333, #0d1117)'};
+
+    border-radius: 1.5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`
+
+export const TitleCard = styled.h2`
+    font: 600 1rem 'Poppins', sans-serif;
+    letter-spacing: 1px;
+`
+
+export const VectorLink = styled.img`
+    cursor: pointer;
+    margin-top: 5px;
 `

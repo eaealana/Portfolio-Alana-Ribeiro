@@ -71,7 +71,7 @@ function Home() {
                             </ContentTitle>
                             <ContentText>
                                 Estou em transição de carreira para a tecnologia
-                                e, sinceramente?{' '}
+                                e sinceramente?{' '}
                                 <HighlightedText>
                                     Nunca estive tão animada com o caminho que
                                     estou construindo.{' '}

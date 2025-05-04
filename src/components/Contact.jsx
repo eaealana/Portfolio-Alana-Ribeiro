@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import Avatar from '../assets/avatar.png'
+import VectorExternalLink from '../assets/VectorExternalLink.svg'
 
 import {
     Body,
@@ -16,8 +17,13 @@ import {
     Location,
     JobTitle,
     TabNavigation,
+    ContentTitle,
     StyledLink,
-    ContentSection,
+    BoardView,
+    CardLineOne,
+    CardContact,
+    TitleCard,
+    VectorLink,
     FooterNavigation,
     FooterText,
     FooterInstagram,
@@ -38,7 +44,7 @@ function Contact() {
 
                         <ProfileHeader>
                             <ProfileName>{'< Alana Ribeiro />'}</ProfileName>
-                            <ProfileUserName>@alanaribeiroosz</ProfileUserName>
+                            <ProfileUserName >@alanaribeiroosz</ProfileUserName>
                         </ProfileHeader>
 
                         <InfoSection>
@@ -61,7 +67,71 @@ function Contact() {
                             </StyledLink>
                         </TabNavigation>
 
-                        <ContentSection></ContentSection>
+                        <ContentTitle>
+                                {'Contato & Redes Sociais :)'}
+                            </ContentTitle>
+                        <BoardView>
+                         
+                            <CardLineOne>
+                                <CardContact>
+                                    <TitleCard>GitHub</TitleCard>
+                                    <a
+                                        href="https://github.com/eaealana"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <VectorLink
+                                            src={VectorExternalLink}
+                                            alt="GitHub"
+                                        />
+                                    </a>
+                                </CardContact>
+
+                                <CardContact cardColor="linear-gradient(135deg, #0072b1, #005983)">
+                                    <TitleCard>LinkedIn</TitleCard>
+                                    <a
+                                        href="https://www.linkedin.com/in/eae-alana"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <VectorLink
+                                            src={VectorExternalLink}
+                                            alt="LinkedIn"
+                                        />
+                                    </a>
+                                </CardContact>
+                            </CardLineOne>
+
+                            <CardLineOne>
+                                <CardContact cardColor="linear-gradient(135deg, #c33764, #1d1d1d)">
+                                    <TitleCard>E-mail</TitleCard>
+                                    <a
+                                        href="mailto:ar.ribeiroalana@gmail.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <VectorLink
+                                            src={VectorExternalLink}
+                                            alt="E-mail"
+                                        />
+                                    </a>
+                                </CardContact>
+
+                                <CardContact cardColor="linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)">
+                                    <TitleCard>Instagram</TitleCard>
+                                    <a
+                                        href="https://www.instagram.com/alanaribeiroosz"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <VectorLink
+                                            src={VectorExternalLink}
+                                            alt="E-mail"
+                                        />
+                                    </a>
+                                </CardContact>
+                            </CardLineOne>
+                        </BoardView>
 
                         <FooterNavigation>
                             <FooterText>

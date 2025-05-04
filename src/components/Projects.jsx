@@ -224,9 +224,8 @@ function Projects() {
                                     <ProjectsText>
                                         Projeto simples, mas poderoso: foi com
                                         esse conversor que exercitei a lógica
-                                        com JavaScript,
-                                        <HighlightedText>
-                                            manipulação de DOM e consumo de
+                                        com JavaScript, <HighlightedText>
+                                             manipulação de DOM e consumo de
                                             APIs.
                                         </HighlightedText>
                                         <br />
